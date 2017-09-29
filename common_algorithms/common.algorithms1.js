@@ -4,8 +4,8 @@
 
 module.exports = function () {
     // regExPrac1();
-    var t1 = jPalindrome('pop'),
-    t2 = jPalindrome('romulus');
+    var t1 = prac1('pop'),
+    t2 = prac1('romulus');
     //jPalindrome('race car');
     //jPalindrome('afdklj324faffklj90');
     console.log(t1);
@@ -18,6 +18,12 @@ function jPalindrome(str) {
     return str.toLowerCase().replace (/[^a-z0-9]/gi, "") ===
             str.split("").reverse().join("");
 }
+
+function prac1(str) {
+    return str.toLowerCase().replace(/[^a-z0-9]/, "") ===
+        str.split('').reverse().join('');
+}
+
 
 // brushing up on my Regular Expression skills
 function regExPrac1() {

@@ -7,13 +7,15 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
-var ca1 = require ('./common_algorithms/common.algorithms1');
+// var ca1 = require ('./common_algorithms/common.algorithms1');
+var setDs = require ('./common_algorithms/set.data.structure');
 
-ca1();
+//ca1();
+setDs(); 
+
+// require('./common_algorithms/functions1')(); 
 
 var app = express();
-
-console.log('ello world ^_^/');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
